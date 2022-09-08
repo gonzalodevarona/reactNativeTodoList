@@ -9,7 +9,7 @@ export default function App() {
 
   const handleAddTask = () => {
     Keyboard.dismiss();
-    setTaskItems(...taskItems, task);
+    setTaskItems([...taskItems, task]);
     setTask(null);
   }
 
